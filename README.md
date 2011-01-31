@@ -9,6 +9,7 @@ Please see TODO file
 Usage
 -----
 
+
 Action "submit" in "reviews" controller - goes to review entry form
 
 Users must be logged in to submit a review
@@ -17,6 +18,8 @@ Three partials:
  - ./app/views/products/_rating.html.erb  -- display number of stars
  - ./app/views/products/_shortrating.html.erb -- shorter version of above
  - ./app/views/products/_review.html.erb  -- display a single review
+(use it like this: `insert_after :product_properties, 'shared/reviews'`)
+
 
 Administrator can edit and/or approve and/or delete reviews.
 
