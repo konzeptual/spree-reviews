@@ -11,7 +11,7 @@ ru-RU:
   review_successfully_submitted: Ваш отзыв успешно создан
   rating: Оценка
   submit_your_review: Отправить отзыв
-  review_content: Содержимое
+  review_content: Отзыв
   review_title: Заголовок
   reviews:
     review_settings: Настройки отызвов
@@ -33,5 +33,21 @@ ru-RU:
   Approved_reviews: Approved
   from: from
   by: by
-  submitted_on: оставлен
+  submitted_on: ""
   based_upon: based upon
+  review:
+    one: one review
+    other: %{count} reviews
+  star:
+    one: "1"
+    other: "%{count}"
+  voice:
+    one: "1 voice"
+    other: "%{count} voices"
+
+  feedback: Полезность
+  stars: Stars
+  feedback_review_for: "Review: '%{review}'"
+  out_of_5: "out of 5"
+  was_this_review_helpful: "Was this review helpful to you?"
+  you_must_enter_value_for_rating: "You must enter a value for rating."
