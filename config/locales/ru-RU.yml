@@ -1,0 +1,37 @@
+ru-RU:
+  write_your_own_review: Оставить отзыв
+  review_management: Администрирование отзывов
+  review_management_description: Администрирование созданных пользователями отзывов
+  back_reviews: Назад к отзывам
+  are_you_sure_review: Вы уверены, что хотите удалить отзыв?
+  info_approve_review: Отзыв одобрен
+  error_approve_review: Ошибки при одобрении отзыва
+  approve: Одобрить
+  leave_us_a_review_for: Оставьте свой отзыв -
+  review_successfully_submitted: Ваш отзыв успешно создан
+  rating: Оценка
+  submit_your_review: Отправить отзыв
+  review_content: Содержимое
+  review_title: Заголовок
+  reviews:
+    review_settings: Настройки отызвов
+    manage_review_settings: Настроить отображение отзывов
+    preview_size: Размер сниппета
+    include_unapproved: Показывать неободренные еще отзывы
+    your_name: Ваше имя
+    your_location: Город
+  average_customer_rating: Средняя оценка
+  the_fine_print: The fine print
+  terms_text: All opinions must comply with our terms and conditions
+  approved_text: Unlocked comments will be published within 1-2 business days.
+  guideline_text: We reserve the right not to post opinions unrelated to your product
+  "terms and conditions": Terms & Conditions
+  "review guidelines": Review Guidelines
+  date_: Дата
+  for: для
+  Unapproved_reviews: Unapproved
+  Approved_reviews: Approved
+  from: from
+  by: by
+  submitted_on: оставлен
+  based_upon: based upon
