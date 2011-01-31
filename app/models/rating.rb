@@ -14,7 +14,7 @@ class Rating < ActiveRecord::Base
   end
   
   def get_stars
-    (self.value + 0.5).floor
+    (self.value ? self.value : 0 + 0.5).floor
   end
   
 end
