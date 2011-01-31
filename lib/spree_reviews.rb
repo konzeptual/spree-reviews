@@ -15,6 +15,9 @@ module SpreeReviews
       Spree::BaseController.class_eval do
         helper ReviewsHelper
       end
+      ProductsController.class_eval do
+        helper ReviewsHelper
+      end
 
     end
 
