@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 class Review < ActiveRecord::Base
   belongs_to :product
   has_many   :feedback_reviews
 
   validates_presence_of :title, :review
-  validates_numericality_of :rating, :only_integer => true
+  validates_numericality_of :rating, :only_integer => true, :message => I18n::t('you_need_to_rate_your_review')
   default_scope order("reviews.created_at DESC")
   scope :approved,  where("approved = ?", true)
   scope :not_approved, where("approved = ?", false)
