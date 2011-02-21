@@ -1,5 +1,6 @@
 <% content_for :head do %>
   <%= stylesheet_link_tag 'reviews.css' %>
+  <%= javascript_include_tag :ckeditor %>
 <% end %>
 <!-- <h1>Product review submission</h1> -->
 
@@ -32,7 +33,7 @@
     	<%= f.label :review, raw("<strong>#{ I18n.t('review_content')}</strong>") %>
       </td>
       <td>
-    	<%= f.text_area :review, :wrap => "virtual", :rows => "10", :cols => "50" %>
+    	<%= f.cktext_area :review, :toolbar=>'Basic', :wrap => "virtual", :rows => "10", :cols => "50" %>
       </td>
     </tr>
     <tr>

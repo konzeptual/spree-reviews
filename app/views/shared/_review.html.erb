@@ -9,7 +9,7 @@
   <br/>
   <span class="attribution"><%= t('submitted_on') %> <strong><%= l review.created_at.to_date %></strong></span>
   <p>
-  <%= review.review %>
+  <%= review.review.html_safe %>
   </p>
   <div id="feedback_review_<%= review.id %>">
     <%= render :partial => "feedback_reviews/form", :locals => {:review => review} %>
