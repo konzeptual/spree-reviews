@@ -13,11 +13,19 @@
 <table cellspacing="0" cellpadding="2">
   <tbody>
     <tr valign="top">
+      <td class="fieldtitle right nowrap">
+	<%= f.label :name, "<strong>#{ I18n.t('reviews.your_name')}</strong>".html_safe %>
+      </td>
+      <td width="100%">
+	<%= f.text_field :name, :size => 50, :maxlength => 100, :class => 'required' %><span class="req">*</span>
+      </td>
+    </tr>
+    <tr valign="top">
       <td style="padding-top: 5px; padding-bottom: 5px;" class="fieldtitle right nowrap">
     	<strong><%= I18n.t('rating') %></strong>
       </td>
       <td style="padding-top: 5px; padding-bottom: 5px;">
-        <%= render :partial => "reviews/stars", :locals => {:stars => @review.rating, :edit_enabled => true} %>
+        <span class="req">*</span><%= render :partial => "reviews/stars", :locals => {:stars => @review.rating, :edit_enabled => true} %>
       </td>
     </tr>
     <tr valign="top">
@@ -25,7 +33,7 @@
     	<%= f.label :title, raw("<strong>#{ I18n.t('review_title')}</strong>") %>
       </td>
       <td>
-        <%= f.text_field :title, :maxlength => "255", :size => "50" %>
+        <%= f.text_field :title, :maxlength => "255", :size => "50", :class => 'required' %>
       </td>
     </tr>
     <tr valign="top">
@@ -33,6 +41,7 @@
     	<%= f.label :review, raw("<strong>#{ I18n.t('review_content')}</strong>") %>
       </td>
       <td>
+	<span class="req">*</span>
     	<%= f.cktext_area :review, :toolbar=>'Basic', :wrap => "virtual", :rows => "10", :cols => "50" %>
       </td>
     </tr>

@@ -7,7 +7,7 @@
   </span>
   &nbsp; <span class="title"><%= review.title %> </span>
   <br/>
-  <span class="attribution"><%= t('submitted_on') %> <strong><%= l review.created_at.to_date %></strong></span>
+  <em><span class="attribution"><%= "<strong>#{review.name}</strong> - ".html_safe if review.name%><noindex><%= t('submitted_on') %> <%= l review.created_at.to_date %></noindex></span></em>
   <p>
   <%= review.review.html_safe %>
   </p>

@@ -42,3 +42,11 @@ div.star-rating-readonly a{cursor:default !important}
 /* Partial Star CSS */
 div.star-rating{background:transparent!important;overflow:hidden!important}
 /* END jQuery.Rating Plugin CSS */
+
+.required {
+    color: red;
+    float: left;
+    margin-left: 2px;
+    position: relative;
+    top: -3px;
+}
