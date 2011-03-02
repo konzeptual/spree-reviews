@@ -4,6 +4,10 @@ class Review < ActiveRecord::Base
   belongs_to :product
   has_many   :feedback_reviews
 
+  include Rakismet::Model
+  rakismet_attrs :author => :name,
+  :content => :review
+
   validates_presence_of :name
   validates :review, :presence => true, :uniqueness => true, :length => { :minimum => 50 }
   validates_numericality_of :rating, :only_integer => true, :message => I18n::t('you_need_to_rate_your_review')
