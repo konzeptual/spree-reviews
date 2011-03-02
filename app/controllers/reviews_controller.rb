@@ -9,6 +9,7 @@ class ReviewsController < Spree::BaseController
   def new
     @product = Product.find_by_permalink params[:product_id] 
     @review = Review.new :product => @product
+    @name = (current_user and not current_user.orders.blank? and current_user.orders.last.ship_address) ? current_user.orders.last.ship_address.firstname : '' 
   end
 
   # save if all ok

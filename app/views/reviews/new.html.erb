@@ -17,7 +17,7 @@
 	<%= f.label :name, "<strong>#{ I18n.t('reviews.your_name')}</strong>".html_safe %>
       </td>
       <td width="100%">
-	<%= f.text_field :name, :size => 50, :maxlength => 100, :class => 'required' %><span class="req">*</span>
+	<%= f.text_field :name, :size => 50, :maxlength => 100, :class => 'required', :value => params[:review][:name] || @name %><span class="req">*</span>
       </td>
     </tr>
     <tr valign="top">
