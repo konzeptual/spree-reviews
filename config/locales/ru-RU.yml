@@ -20,6 +20,7 @@ ru-RU:
     include_unapproved: Показывать неободренные еще отзывы
     your_name: Ваше имя
     your_location: Город
+    your_email: Email
   average_customer_rating: Средняя оценка
   the_fine_print: The fine print
   terms_text: All opinions must comply with our terms and conditions
@@ -52,10 +53,12 @@ ru-RU:
   was_this_review_helpful: "Was this review helpful to you?"
   you_must_enter_value_for_rating: "You must enter a value for rating."
   you_need_to_rate_your_review: Необходимо дать оценку по 5-бальной шкале
+  your_review_is_spam: К сожалению ваш отзыв расценен как спам! Попробуйте убрать ссылки на другие сайты из отзыва.
 
   activerecord:
     attributes:
       review:
+        name: Имя
         title: Заголовок
         review: Отзыв
         rating: Оценка

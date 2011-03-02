@@ -18,8 +18,12 @@ class ReviewsController < Spree::BaseController
 
     @review = Review.new :product => @product
     if @review.update_attributes(params[:review]) 
-      flash[:notice] = t('review_successfully_submitted')
-      redirect_to (product_path(@product))
+      if @review.spam?
+        flash[:error] = t('you_review_is_spam')
+      else
+        flash[:notice] = t('review_successfully_submitted')
+        redirect_to (product_path(@product))
+      end
     else
       # flash[:notice] = 'There was a problem in the submitted review'
       render :action => "new" 
