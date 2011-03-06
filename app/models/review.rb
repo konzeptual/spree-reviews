@@ -6,7 +6,8 @@ class Review < ActiveRecord::Base
 
   include Rakismet::Model
   rakismet_attrs :author => :name,
-  :content => :review
+  :content => :review,
+  :author_email => :email
 
   validates_presence_of :name
   validates :review, :presence => true, :uniqueness => true, :length => { :minimum => 50 }

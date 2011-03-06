@@ -20,6 +20,14 @@
       </td>
     </tr>
     <tr valign="top">
+      <td class="fieldtitle right nowrap">
+	<%= f.label :email, "<strong>#{ I18n.t('reviews.your_email')}</strong>".html_safe %>
+      </td>
+      <td width="100%">
+	<%= f.text_field :email, :size => 50, :maxlength => 100, :class => 'required', :value => (params[:review][:email] if params[:review]) || @email %><span class="req">*</span>
+      </td>
+    </tr>
+    <tr valign="top">
       <td style="padding-top: 5px; padding-bottom: 5px;" class="fieldtitle right nowrap">
     	<strong><%= I18n.t('rating') %></strong>
       </td>
