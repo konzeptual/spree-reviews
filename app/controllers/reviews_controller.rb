@@ -21,6 +21,7 @@ class ReviewsController < Spree::BaseController
     if @review.update_attributes(params[:review]) 
       if @review.spam?
         flash[:error] = t('you_review_is_spam')
+        redirect_to (product_path(@product))
       else
         flash[:notice] = t('review_successfully_submitted')
         redirect_to (product_path(@product))
