@@ -28,7 +28,7 @@ class Review < ActiveRecord::Base
   end
 
   def before_save 
-    self.review = Sanitize.clean(self.review, Sanitize::Config::BASIC)
+    self.review = Sanitize.clean(self.review, Sanitize::Config::RESTRICTED)
   end 
 
 
